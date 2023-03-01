@@ -1,4 +1,4 @@
-# Seattle Houses Analysis
+# Seattle Houses Analysis and Price Prediction
  Analysis of a dataset that contains house sale prices for King County, which includes Seattle. It includes homes sold between May 2014 and May 2015.
  
  
@@ -34,7 +34,7 @@ The .csv file used is on this link: https://www.kaggle.com/datasets/harlfoxem/ho
   Build an iterative dashboard through streamlit and provide the access link through the Heroku platform.
   ![image](https://user-images.githubusercontent.com/124091702/216185715-8004d531-876f-4c79-bb24-83b86470222a.png)
 
-### Planning the Solution
+### 3.1 Planning the Solution
 
    - Property filters by one or several regions.
  
@@ -83,3 +83,24 @@ The .csv file used is on this link: https://www.kaggle.com/datasets/harlfoxem/ho
     -User Action: Filter number of bedrooms and bathrooms
     
     -A view:  A histogram with each attribute defined.
+    
+  
+  ### 3.2 Machine Learning Implementation
+  ##### 3.2.1 Linear Regression
+  
+  This type of machine learning was implemented by analyzing the correlation coefficient of price with attributes.In addition, the multiple linear regression results were already satisfactory for the report and for the CEO's required understanding and analysis of pricing.
+
+#### Heatmap with correction coefficients
+     
+![heatcoeficiente](https://user-images.githubusercontent.com/124091702/222221705-b0090b49-36b1-4488-a251-9995a2ccd84c.png)
+
+With this analysis we chose the attributes: 'bedrooms', 'bathrooms', 'sqft_living',
+       'sqft_lot', 'floors', 'waterfront', 'view', 'condition', 'grade',
+       'sqft_above', 'sqft_basement', 'yr_built', 'yr_renovated', 'zipcode',
+       'lat'and'long' to be compared with the 'price'attribute.
+       
+##### Conclusion of the linear regression implementation
+With this implementation, we achieved around 68.85% accuracy of the results with the validation base and an average error equal to 123888.44377486005.
+
+
+    
